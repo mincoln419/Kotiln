@@ -16,6 +16,12 @@ fun main() {
     println(nullableStringLength)
 
     println(getLengthIfNotNull(nullableStr))
+
+    //자바코드와 혼용해서 사용할때는 npe 발생 주의할것
+    println(Java_NullSafety.getNullStr())
+    println(Java_NullSafety.getNullStr().length)
+
+
 }
 
 fun getNullstr() : String? = null
