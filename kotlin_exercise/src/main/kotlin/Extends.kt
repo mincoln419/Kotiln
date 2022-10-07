@@ -27,12 +27,12 @@ class ChildBulldog : Bulldog () {
 }
 
 
-abstract class Developer {
+abstract class Developer1 {
     abstract var age: Int
     abstract fun code(language: String)
 }
 
-class BackendDeveloper(override var age: Int) : Developer() {
+class BackendDeveloper1(override var age: Int) : Developer1() {
     override fun code(language: String) {
 
         println("I'm $age. I code with $language")
@@ -42,6 +42,6 @@ class BackendDeveloper(override var age: Int) : Developer() {
 }
 
 fun main() {
-    val developer = BackendDeveloper(34)
+    val developer = BackendDeveloper1(34)
     developer.code("kotlin")
 }
