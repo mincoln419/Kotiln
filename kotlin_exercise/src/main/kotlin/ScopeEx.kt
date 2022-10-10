@@ -21,11 +21,24 @@ fun main() {
     println(result)
 
 
-    val config = DatabaseClient()
-    config.url = "localhost:3306"
-    config.username = "mysql"
-    config.password = "1234"
-    val connected = config.connect()
+//    val config = DatabaseClient()
+//    config.url = "localhost:3306"
+//    config.username = "mysql"
+//    config.password = "1234"
+//    val connected = config.connect()
+
+//    val connected: Boolean = DatabaseClient().let {
+//        it.url = "localhost:3306"
+//        it.username = "mysql"
+//        it.password = "1234"
+//        it.connect()
+//    }
+    val connected: Boolean = DatabaseClient().run {
+        url = "localhost:3306"
+        username = "mysql"
+        password = "1234"
+        connect()
+    }
 
     println(connected)
 
