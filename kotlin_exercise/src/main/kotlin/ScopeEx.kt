@@ -42,6 +42,24 @@ fun main() {
 
     println(connected)
 
+    var strex = "안녕하세요"
+
+    var length : Int = with(strex){
+        length
+    }
+
+    println(length)
+
+
+    val connected2: Boolean = with(DatabaseClient()){
+        url = "localhost:3306"
+        username = "mysql"
+        password = "1234"
+        connect()
+    }
+
+    println("connected2...")
+    println(connected2)
 }
 
 class DatabaseClient {
