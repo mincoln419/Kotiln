@@ -20,6 +20,7 @@ fun main() {
     val numberlist = listOf("1", "2", "3")
     numberlist.map{it.toInt()}.forEach{println(it)};
 
+    numberlist.map(String::toInt).forEach(::println)
 
 }
 
