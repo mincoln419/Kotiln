@@ -24,6 +24,7 @@ subprojects {
     apply(plugin = "kotlin")
     apply(plugin = "kotlin-kapt")
     apply(plugin = "kotlin-spring")
+
     apply(plugin = "maven-publish")
     apply(plugin = "io.spring.dependency-management")
 
